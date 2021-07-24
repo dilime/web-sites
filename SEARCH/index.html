@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DILSHODME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <i class="search-icon fas fa-search"></i>
+    <div class="search-screen">
+        <i class="close-icon fas fa-times"></i>
+        <input type="text" class="search-box" placeholder="start typing...">
+    </div>
+
+    <script>
+        document.querySelector(".search-icon").addEventListener('click',function(){
+            document.querySelector(".search-screen").classList.add("active");
+        });
+
+        document.querySelector(".close-icon").addEventListener('click',function(){
+            document.querySelector(".search-screen").classList.remove("active");
+        });
+    </script>
+</body>
+</html>

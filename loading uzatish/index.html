@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>KHM Loading</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<script type="text/javascript">
+    var seconds=0;
+    function displayseconds()
+    {
+      seconds+=1;
+      document.getElementById('secondsdisplay').innerText="This Page Will Be In"+seconds+" Seconds... ";
+    }
+
+      setInterval(displayseconds,1000);
+      function redirectpage()
+      {
+        window.location="ye.html";
+      }
+      setTimeout('redirectpage()',6050)
+  </script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="loading-page">
+  <div class="counter">
+    <p>loading</p>
+    <h1>0%
+      <!--
+      h1.abs loading
+      h1.abs.color loading
+      -->
+    </h1>
+    <hr/>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
