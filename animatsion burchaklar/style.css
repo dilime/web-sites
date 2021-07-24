@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.triangle-background {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 700px 700px 0 0;
+  border-color: #F9F9F9 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.triangle-background-weak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 500px 500px 0 0;
+  border-color: #E8E8E8 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.triangle-background-strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 400px 400px 0 0;
+  border-color: #D45E99 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.wrap {
+  height: 100%;
+  position: relative;
+}
+.wrap:hover .triangle-background {
+  border-width: 700px 0 0 0;
+}
+.wrap:hover .triangle-background-weak {
+  border-width: 0 500px 0 0;
+}
+.wrap:hover .triangle-background-strong {
+  border-width: 400px 0 0 0;
+}
+.wrap:hover .github {
+  border-width: 0 100px 0 0;
+}
+.wrap:hover .footer {
+  border-width: 0 0 200px 200px;
+}
+
+.gi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: black transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 200px;
+  border-color: transparent transparent #333 transparent;
+  transition: border-width 0.5s;
+}
+
+.footer-two {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 400px;
+  border-color: transparent transparent black transparent;
+  transition: border-width 0.5s;
+}
